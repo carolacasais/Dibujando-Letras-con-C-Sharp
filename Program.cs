@@ -40,6 +40,19 @@ namespace alfabeto
                 }
                 Console.WriteLine(" ");
             }
+            
+            Console.WriteLine("LETRA H:");
+            for (int row = 0; row < length; row++)
+            {
+                for (int column = 0; column < length; column++)
+                {
+                    Console.Write(
+                        row == 3 ||
+                        column == 0 ||
+                        column == 6
+                        ? asterisco : blanco);
+                }
+                Console.WriteLine(" ");
         }
     }
 }
